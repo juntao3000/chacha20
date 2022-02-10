@@ -13,6 +13,7 @@
 // You should have received a copy of the GNU Affero General Public License
 // along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
+//go:build amd64 && !noasm
 // +build amd64,!noasm
 
 package hardware
@@ -20,7 +21,7 @@ package hardware
 import (
 	"golang.org/x/sys/cpu"
 
-	"gitlab.com/yawning/chacha20.git/internal/api"
+	"github.com/juntao3000/chacha20/internal/api"
 )
 
 //go:noescape
